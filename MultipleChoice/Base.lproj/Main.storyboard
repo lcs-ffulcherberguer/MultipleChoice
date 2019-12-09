@@ -84,7 +84,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="correctAnswers" destination="jkR-Xt-weg" id="1Vb-ZW-WFy"/>
                         <outlet property="numberOfQuestions" destination="2NX-3h-0AR" id="jiM-Ci-pPy"/>
+                        <outlet property="outputTextView" destination="39V-fl-naQ" id="TK0-rn-CEt"/>
+                        <outlet property="questionsField" destination="2NX-3h-0AR" id="fj2-1D-Wbl"/>
                         <outlet property="studentAnswer" destination="c5A-1v-JLM" id="isw-0r-k3A"/>
                     </connections>
                 </viewController>
