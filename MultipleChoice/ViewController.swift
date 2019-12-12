@@ -51,7 +51,15 @@ class ViewController: UIViewController {
             
         }
         
+        // For in Loop to find the position to see if the student answer is right
+        for (position, character) in studentAnswer.() {
+            let index = correctAnswers.index(correctAnswers.startIndex, offsetBy: position)
+            if character == teacherAnswer[index] && answers.contains(character){
+                correctAnswers += 1
+            }
+        }
         
+        outputTextView.text = "The student got \(correctAnswers) questions right."
         
     }
     
